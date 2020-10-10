@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Bitcoin Tracker
+      XRP Tracker
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -17,7 +17,7 @@
     <ion-row justify-content-center>
       <ion-col>
         <div class="ion-text-center">
-          <h1>BTC : {{bitcoin$.current_price}} {{selectedFiat}} </h1>
+          <h1>XRP : {{bitcoin$.current_price}} {{selectedFiat}} </h1>
           <div *ngIf="bitcoin$.price_change_percentage_24h>0">
             <h3>The price is Up by {{bitcoin$.price_change_percentage_24h}}% in the last 24 Hours.</h3>
           </div>
@@ -42,9 +42,6 @@
     </ion-row>
 
   </ion-grid>
-
-
-
 
   <div justify-content-center>
     <ng-template #loading>
